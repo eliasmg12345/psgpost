@@ -52,5 +52,9 @@ if (file_exists(APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php'))
 	require APPPATH . 'Config/' . ENVIRONMENT . '/Routes.php';
 }
 $routes->get('lista','Cargos::lista');
-$routes->get('crear','Cargos::crear');
+$routes->get('crear/(:any)','Cargos::crear/$1');
 $routes->post('guardar','Cargos::guardar');
+$routes->get('borrar/(:num)', 'Cargos::borrar/$1');
+$routes->get('editar/(:num)', 'Cargos::editar/$1');
+$routes->post('actualizar','Cargos::actualizar');
+//$routes->get('postular/(:num)','Cargos::postular/$1');

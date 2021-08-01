@@ -11,7 +11,7 @@
  Target Server Version : 50733
  File Encoding         : 65001
 
- Date: 29/07/2021 23:14:16
+ Date: 01/08/2021 00:28:27
 */
 
 SET NAMES utf8mb4;
@@ -31,12 +31,11 @@ CREATE TABLE `psg_cargo`  (
   `motivacion` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   `cargo` varchar(255) CHARACTER SET latin1 COLLATE latin1_swedish_ci NULL DEFAULT NULL,
   PRIMARY KEY (`id`) USING BTREE
-) ENGINE = InnoDB AUTO_INCREMENT = 3 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
+) ENGINE = InnoDB AUTO_INCREMENT = 30 CHARACTER SET = latin1 COLLATE = latin1_swedish_ci ROW_FORMAT = Dynamic;
 
 -- ----------------------------
 -- Records of psg_cargo
 -- ----------------------------
-INSERT INTO `psg_cargo` VALUES (1, 'ana', 'ana', 567, 8765, 'ana@hotmail.com', 'competitiva', 'limpieza');
-INSERT INTO `psg_cargo` VALUES (2, 'robert', 'levandowski', 8765, 4567, 'robert@gmail.com', 'profesional', 'asesor');
+INSERT INTO `psg_cargo` VALUES (29, 'Richard ', 'Torrez', 777666, 66667777, 'richard@gmail.com', 'interactuar y obtener satisfacción propia, descubrir retos y poner en juego las capacidades para mostrar mi intelecto', 'Profesional');
 
 SET FOREIGN_KEY_CHECKS = 1;
